@@ -1,6 +1,11 @@
 namespace SD_MiniHW_1.Domain.Entities.Animals.Abstract;
 
-public class Predator
+/// <summary>
+/// Абстрактный класс для хищников.
+/// </summary>
+public abstract class Predator : Animal
 {
-    
+    protected Predator(string name, int food, int number) : base(name, food, number)
+    {
+    }
 }
